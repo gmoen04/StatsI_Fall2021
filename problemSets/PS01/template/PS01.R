@@ -30,7 +30,7 @@ pkgTest <- function(pkg){
 lapply(c(),  pkgTest)
 
 # set working directory
-setwd("/Users/garethmoen/Documents/PG Dip - ASDS/M-Stats I/Problem Set Submissions")
+setwd("~/Documents/GitHub/QTM200Spring2021/problem_sets/PS1")
 
 
 #####################
@@ -38,17 +38,6 @@ setwd("/Users/garethmoen/Documents/PG Dip - ASDS/M-Stats I/Problem Set Submissio
 #####################
 
 y <- c(105, 69, 86, 100, 82, 111, 104, 110, 87, 108, 87, 90, 94, 113, 112, 98, 80, 97, 95, 111, 114, 89, 95, 126, 98)
-
-str(y) # sample size = 25 (t test needed)
-mean(y) # sample mean = 98.44
-sd(y) # sd of sample y = 13.09287
-
-plot(density(y),
-     main="Distribution of class IQ",
-     xlab="IQ")
-
-# confidence coefficient = .90
-iq <- t.test(y, mu = 100)
 
 #####################
 # Problem 2
